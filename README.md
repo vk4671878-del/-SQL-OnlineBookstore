@@ -24,10 +24,11 @@ This project presents a relational database system for an Online Bookstore devel
 # # Dataset Description
 The dataset for the Online Bookstore project consists of structured relational tables that store information about books, customers, and orders. The data is organized to efficiently manage bookstore operations such as inventory tracking, customer management, and order processing.
 
-# Tables Used
- Books Table: Stores information about all available books.
+## Tables Used
+ # Books Table: 
+ Stores information about all available books.
 
-# Attributes:
+## Attributes:
 - Book_ID – Unique identifier for each book
 - Title – Name of the book
 - Author – Author of the book
@@ -36,19 +37,19 @@ The dataset for the Online Bookstore project consists of structured relational t
 - Stock – Number of copies available
 - Published_Year – Year of publication
 
- # Customers Table
+ ## Customers Table
 Stores customer details.
 
-# Attributes:
+## Attributes:
 - Customer_ID – Unique identifier for each customer
 - Name – Customer name
 - Email – Contact email
 - Country – Customer’s country
 - City – Customer’s city
  
- # Orders Table
+ ## Orders Table
 Stores order transaction details.
-# Attributes:
+## Attributes:
 - Order_ID – Unique identifier for each order
 - Customer_ID – References the customer
 - Book_ID – References the book
@@ -56,7 +57,7 @@ Stores order transaction details.
 - Quantity – Number of books ordered
 - Total_Amount – Total cost of the order
 
-# Relationships
+## Relationships
 - Books and Orders are linked through Book_ID
 - Customers and Orders are linked through Customer_ID
 - These relationships help maintain data consistency and integrity
