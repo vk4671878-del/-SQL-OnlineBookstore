@@ -62,5 +62,35 @@ Stores order transaction details.
 - Customers and Orders are linked through Customer_ID
 - These relationships help maintain data consistency and integrity
 
-# Summary
-The dataset is designed using relational database principles, enabling efficient querying, data analysis, and real-world simulation of an online bookstore system.
+# Data Dictionary
+## Books Table
+| Column Name    | Data Type | Description                          |
+| -------------- | --------- | ------------------------------------ |
+| Book_ID        | INT       | Unique ID for each book              |
+| Title          | VARCHAR   | Name of the book                     |
+| Author         | VARCHAR   | Author of the book                   |
+| Genre          | VARCHAR   | Category of the book (Fiction, etc.) |
+| Price          | DECIMAL   | Price of the book                    |
+| Stock          | INT       | Available quantity in inventory      |
+| Published_Year | INT       | Year the book was published          |
+
+## Customers Table
+| Column Name | Data Type | Description                 |
+| ----------- | --------- | --------------------------- |
+| Customer_ID | INT       | Unique ID for each customer |
+| Name        | VARCHAR   | Customer name               |
+| Email       | VARCHAR   | Customer email address      |
+| Country     | VARCHAR   | Customer country            |
+| City        | VARCHAR   | Customer city               |
+
+## Orders Table
+| Column Name  | Data Type | Description                |
+| ------------ | --------- | -------------------------- |
+| Order_ID     | INT       | Unique ID for each order   |
+| Customer_ID  | INT       | Links to Customers table   |
+| Book_ID      | INT       | Links to Books table       |
+| Order_Date   | DATE      | Date when order was placed |
+| Quantity     | INT       | Number of books ordered    |
+| Total_Amount | DECIMAL   | Total price of the order   |
+
+
