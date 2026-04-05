@@ -100,13 +100,13 @@ MySQL Workbench – Tool used to design and execute SQL queries
 
 ## Sql Analysis and Queries
 ### Q1: How can we calculate the total number of books sold for each genre?
-'''sql
+```sql
 select b.genre,sum(o.Quantity) as total_quantity
 from Books as b
 join Orders as o
 on b.Book_ID=o.book_id
 group by b.genre;
-'''
+```
 - How can we find the average price of books in the "Fantasy" genre?
 - How can we identify customers who have placed at least 2 orders?
 - How can we determine the most frequently ordered book?
