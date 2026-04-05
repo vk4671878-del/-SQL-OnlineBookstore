@@ -5,10 +5,10 @@ An Online Bookstore database project built using SQL, featuring structured schem
 This project presents a relational database system for an Online Bookstore developed using SQL. It focuses on designing an efficient database schema to handle books, users, and orders. The project implements key database concepts such as normalization, primary and foreign keys, and complex queries to ensure data integrity and efficient operations.
 
 # Project Objectives
-1.Design a database for an online bookstore
-2.Manage books, customers, and orders
-3.Use SQL queries for data handling
-4.Ensure data accuracy using relationships and normalization
+- Design a database for an online bookstore
+- Manage books, customers, and orders
+- Use SQL queries for data handling
+- Ensure data accuracy using relationships and normalization
 
 # key Questions
 How can we calculate the total number of books sold for each genre?
@@ -21,7 +21,7 @@ How can we list the cities where customers who spent more than $30 are located?
 How can we find the customer who spent the most on orders?
 How can we calculate the remaining stock after fulfilling all orders?
 
-## Dataset Description
+# # Dataset Description
 The dataset for the Online Bookstore project consists of structured relational tables that store information about books, customers, and orders. The data is organized to efficiently manage bookstore operations such as inventory tracking, customer management, and order processing.
 
 # Tables Used
