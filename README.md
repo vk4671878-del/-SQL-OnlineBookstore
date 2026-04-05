@@ -93,4 +93,26 @@ Stores order transaction details.
 | Quantity     | INT       | Number of books ordered    |
 | Total_Amount | DECIMAL   | Total price of the order   |
 
+## Tools Used
+SQL – For writing queries and managing data
+MySQL – Database management system used to store data
+MySQL Workbench – Tool used to design and execute SQL queries
+
+## Sql Analysis and Queries
+### Q1: How can we calculate the total number of books sold for each genre?
+'''sql
+select b.genre,sum(o.Quantity) as total_quantity
+from Books as b
+join Orders as o
+on b.Book_ID=o.book_id
+group by b.genre;
+'''
+- How can we find the average price of books in the "Fantasy" genre?
+- How can we identify customers who have placed at least 2 orders?
+- How can we determine the most frequently ordered book?
+- How can we find the top 3 most expensive books in the "Fantasy" genre?
+- How can we calculate the total quantity of books sold by each author?
+- How can we list the cities where customers who spent more than $30 are located?
+- How can we find the customer who spent the most on orders?
+- How can we calculate the remaining stock after fulfilling all orders?
 
