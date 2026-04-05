@@ -166,3 +166,13 @@ group by b.Book_ID,b.Title,b.Stock
 order by b.Book_id;
 ```
 
+## Key Insights
+- The database efficiently manages books, customers, and orders using structured tables.
+- SQL queries help in quickly retrieving important information like top-selling books and total revenue.
+- Analysis shows which genres and books are most popular among customers.
+- Customer data helps identify purchasing patterns and high-value customers.
+- Stock management queries help track low inventory and prevent shortages.
+- Joins and aggregate functions improve data analysis and reporting capabilities.
+
+## Conclusion
+The Online Bookstore project successfully demonstrates the use of SQL in designing and managing a relational database system. It effectively handles data related to books, customers, and orders while ensuring data integrity and efficiency. The project showcases practical implementation of database concepts such as normalization, relationships, and query optimization. Overall, it provides a real-world understanding of how databases support e-commerce platforms.
